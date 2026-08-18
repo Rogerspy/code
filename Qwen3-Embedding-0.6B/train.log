@@ -1,0 +1,49 @@
+WARNING:sentence_transformers.util.decorators:The `tokenizer_kwargs` argument was renamed and is now deprecated. Please use `processor_kwargs` instead.
+==================================================================
+[PPU-EVIDENCE] Qwen3-Embedding-0.6B
+[PPU-EVIDENCE] torch=2.9.0
+[PPU-EVIDENCE] torch.cuda.is_available()=True
+[PPU-EVIDENCE] device_count=1
+[PPU-EVIDENCE] device(0).name='PPU-ZW810E'  <- 须为 'PPU-ZW810E'(本机含光卡)
+[PPU-EVIDENCE] CUDA_VISIBLE_DEVICES='2'
+[PPU-EVIDENCE] PJRT_DEVICE='CUDA'
+[PPU-EVIDENCE] PASS: 设备为本机含光 PPU(非 NVIDIA、非 CPU)
+==================================================================
+device=cuda
+model_path=/workspace/checkpoints/Qwen3-Embedding-0.6B
+[PPU-EVIDENCE] Qwen3-Embedding-0.6B first_param.device=cuda:0  cuda_mem_allocated=2272.7MB
+flops_per_step=650801749632
+  epoch 1/2 | step 1/10 | loss 0.000191 | lr 2.00e-05 | 6.20 samples/s  [GPU] ppu2 | mem 12323MiB/98304MiB | util 0% | power 159.6W | temp 39C
+  epoch 1/2 | step 2/10 | loss 0.000000 | lr 2.00e-05 | 13.08 samples/s  [GPU] ppu2 | mem 12323MiB/98304MiB | util 0% | power 159.6W | temp 39C
+  epoch 1/2 | step 3/10 | loss 0.000001 | lr 2.00e-05 | 12.68 samples/s  [GPU] ppu2 | mem 12463MiB/98304MiB | util 30% | power 168.2W | temp 40C
+  epoch 1/2 | step 4/10 | loss 0.000002 | lr 2.00e-05 | 12.72 samples/s  [GPU] ppu2 | mem 12511MiB/98304MiB | util 46% | power 174.2W | temp 40C
+  epoch 1/2 | step 5/10 | loss 0.000003 | lr 2.00e-05 | 12.88 samples/s  [GPU] ppu2 | mem 12511MiB/98304MiB | util 46% | power 174.2W | temp 40C
+  [eval] epoch 1 | acc 20/20 (1.000) | mean_loss 0.000040
+  epoch 2/2 | step 6/10 | loss 0.000000 | lr 2.00e-05 | 12.58 samples/s  [GPU] ppu2 | mem 12523MiB/98304MiB | util 100% | power 186.3W | temp 41C
+  epoch 2/2 | step 7/10 | loss 0.000002 | lr 2.00e-05 | 13.30 samples/s  [GPU] ppu2 | mem 12535MiB/98304MiB | util 40% | power 185.3W | temp 40C
+  epoch 2/2 | step 8/10 | loss 0.000000 | lr 2.00e-05 | 13.37 samples/s  [GPU] ppu2 | mem 12535MiB/98304MiB | util 40% | power 185.3W | temp 40C
+  epoch 2/2 | step 9/10 | loss 0.000000 | lr 2.00e-05 | 13.04 samples/s  [GPU] ppu2 | mem 12547MiB/98304MiB | util 28% | power 188.8W | temp 40C
+  epoch 2/2 | step 10/10 | loss 0.000000 | lr 2.00e-05 | 12.76 samples/s  [GPU] ppu2 | mem 12547MiB/98304MiB | util 40% | power 187.4W | temp 40C
+  [eval] epoch 2 | acc 20/20 (1.000) | mean_loss 0.000001
+[2026-08-13 17:45:27,284] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/usr/local/lib/python3.12/site-packages/deepspeed/runtime/zero/linear.py:47: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @autocast_custom_fwd
+/usr/local/lib/python3.12/site-packages/deepspeed/runtime/zero/linear.py:66: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @autocast_custom_bwd
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.9
+[93m [WARNING] [0m using untested triton version (3.5.0), only 1.0.0 is known to be compatible
+saved finetuned model to /workspace/code/Qwen3-Embedding-0.6B/finetuned
+[PPU-EVIDENCE] mem after_train: allocated=9109.1MB reserved=12156.0MB
+============================================================================
+TRAIN SUMMARY | Qwen3-Embedding-0.6B | device PPU-ZW810E (cuda:0, physical ppu2)
+  steps=10  epochs=2  train_time=4.003s  throughput=9.99 samples/s
+  final_acc=20/20 (1.000)
+  GPU mem: peak 12547MiB / 98304MiB   (ppu-smi, 8 samples)
+  GPU util: avg 39.8%  peak 100.0%   power avg 175.6W   temp peak 41C
+  TFLOPS (measured: FLOP_counter 650801.75M/step × 10 steps / 4.003s): 1.626 TFLOPS
+============================================================================
+TRAIN_OK

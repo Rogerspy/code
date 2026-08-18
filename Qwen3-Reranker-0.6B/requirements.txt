@@ -1,0 +1,7 @@
+# Extra pip dependencies for Qwen3-Reranker-0.6B train/infer.
+# torch is provided by the Aliyun inference-xpu-pytorch container image (PPU masquerades as CUDA).
+
+transformers>=4.51.0
+sentence-transformers>=3.0
+numpy<2
+einops

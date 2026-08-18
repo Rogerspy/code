@@ -1,0 +1,142 @@
+[
+  {
+    "query": "What is the capital of France?",
+    "positive": "Paris is the capital and largest city of France, located on the Seine River.",
+    "negative": "Mount Everest is the highest mountain on Earth, located in the Himalayas.",
+    "lang": "en",
+    "topic": "geography"
+  },
+  {
+    "query": "中国最长的河流是哪一条？",
+    "positive": "长江是中国最长的河流，全长约6300公里，发源于青藏高原。",
+    "negative": "撒哈拉沙漠是世界上最大的热沙漠，位于非洲北部。",
+    "lang": "zh",
+    "topic": "geography"
+  },
+  {
+    "query": "¿Qué es la gravedad?",
+    "positive": "La gravedad es la fuerza con la que la Tierra atrae a los cuerpos hacia su centro.",
+    "negative": "La cocina italiana es famosa por su pasta y su pizza.",
+    "lang": "es",
+    "topic": "physics"
+  },
+  {
+    "query": "Qui a dirigé la France pendant la Révolution ?",
+    "positive": "Maximilien Robespierre a été une figure centrale de la Révolution française.",
+    "negative": "Le langage Python est un langage de programmation très populaire.",
+    "lang": "fr",
+    "topic": "history"
+  },
+  {
+    "query": "Was ist eine for-Schleife in Python?",
+    "positive": "Eine for-Schleife in Python iteriert über eine Sequenz und führt Code für jedes Element aus.",
+    "negative": "Der Amazonas ist der längste Fluss Südamerikas.",
+    "lang": "de",
+    "topic": "code"
+  },
+  {
+    "query": "How do I make a cup of coffee?",
+    "positive": "To make coffee, brew ground coffee beans with hot water using a filter or an espresso machine.",
+    "negative": "The Great Wall of China stretches for thousands of kilometers across northern China.",
+    "lang": "en",
+    "topic": "daily-life"
+  },
+  {
+    "query": "谁是中国历史上的第一位皇帝？",
+    "positive": "秦始皇是中国历史上的第一位皇帝，他统一了六国并建立了秦朝。",
+    "negative": "光合作用是绿色植物利用阳光合成有机物的过程。",
+    "lang": "zh",
+    "topic": "history"
+  },
+  {
+    "query": "光の速度はどれくらいですか？",
+    "positive": "光の速度は真空中で秒速約30万キロメートルです。",
+    "negative": "フランスの首都はパリという都市です。",
+    "lang": "ja",
+    "topic": "physics"
+  },
+  {
+    "query": "How do I reverse a list in Python?",
+    "positive": "Use slicing with a step of -1, e.g. my_list[::-1], to reverse a list in Python.",
+    "negative": "Beethoven composed nine symphonies during the Classical era of music.",
+    "lang": "en",
+    "topic": "code"
+  },
+  {
+    "query": "Какая столица у России?",
+    "positive": "Столицей России является город Москва.",
+    "negative": "Сахароза — это обычный столовый сахар, добываемый из сахарного тростника.",
+    "lang": "ru",
+    "topic": "geography"
+  },
+  {
+    "query": "What is a black hole?",
+    "positive": "A black hole is a region of spacetime where gravity is so strong that nothing, not even light, can escape it.",
+    "negative": "Photosynthesis is the process by which plants convert sunlight into chemical energy.",
+    "lang": "en",
+    "topic": "astronomy"
+  },
+  {
+    "query": "什么是光合作用？",
+    "positive": "光合作用是绿色植物利用光能将二氧化碳和水转化为有机物并释放氧气的过程。",
+    "negative": "圆周率π约等于3.14159，是圆周长与直径的比值。",
+    "lang": "zh",
+    "topic": "biology"
+  },
+  {
+    "query": "¿Cómo se prepara el arroz blanco?",
+    "positive": "Para preparar arroz blanco, se hierve el arroz en agua con un poco de sal hasta que esté tierno.",
+    "negative": "La Revolución Industrial comenzó en Inglaterra durante el siglo XVIII.",
+    "lang": "es",
+    "topic": "daily-life"
+  },
+  {
+    "query": "What is the Pythagorean theorem?",
+    "positive": "The Pythagorean theorem states that in a right triangle, a² + b² = c², where c is the hypotenuse.",
+    "negative": "The Nile River flows through northeastern Africa into the Mediterranean Sea.",
+    "lang": "en",
+    "topic": "math"
+  },
+  {
+    "query": "Quand a eu lieu la chute de l'Empire romain d'Occident ?",
+    "positive": "L'Empire romain d'Occident est tombé en 476 après J.-C.",
+    "negative": "L'acide acétique est le composant principal du vinaigre.",
+    "lang": "fr",
+    "topic": "history"
+  },
+  {
+    "query": "如何在Python中读取文件？",
+    "positive": "在Python中可以使用open函数和with语句读取文件，例如：with open('file.txt') as f: content = f.read()。",
+    "negative": "珠穆朗玛峰是世界最高峰，海拔约8848米。",
+    "lang": "zh",
+    "topic": "code"
+  },
+  {
+    "query": "What is the chemical formula of water?",
+    "positive": "The chemical formula of water is H2O, consisting of two hydrogen atoms and one oxygen atom.",
+    "negative": "Shakespeare wrote Hamlet, Macbeth, and many other famous plays.",
+    "lang": "en",
+    "topic": "chemistry"
+  },
+  {
+    "query": "Wie lange muss ich Eier kochen, um sie hart zu machen?",
+    "positive": "Um Eier hart zu kochen, sollten sie etwa 9 bis 10 Minuten in kochendem Wasser gekocht werden.",
+    "negative": "Die Geschwindigkeit des Lichts beträgt etwa 300.000 Kilometer pro Sekunde.",
+    "lang": "de",
+    "topic": "daily-life"
+  },
+  {
+    "query": "¿Quién fue el primer presidente de los Estados Unidos?",
+    "positive": "George Washington fue el primer presidente de los Estados Unidos, de 1789 a 1797.",
+    "negative": "El agua está compuesta por hidrógeno y oxígeno, con la fórmula química H2O.",
+    "lang": "es",
+    "topic": "history"
+  },
+  {
+    "query": "What is Newton's second law of motion?",
+    "positive": "Newton's second law states that the net force on an object equals its mass times acceleration, F = ma.",
+    "negative": "The Amazon Rainforest is the largest tropical rainforest in the world.",
+    "lang": "en",
+    "topic": "physics"
+  }
+]

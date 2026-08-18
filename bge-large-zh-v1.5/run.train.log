@@ -1,0 +1,23 @@
+/workspace/code/bge-large-zh-v1.5/train.py:81: DeprecationWarning: Importing from 'sentence_transformers.losses' is deprecated and will be removed in a future version. Please use 'sentence_transformers.sentence_transformer.losses' instead.
+  from sentence_transformers.losses import MultipleNegativesRankingLoss
+bge-large-zh-v1.5 fine-tune | cases=20 device=cuda epochs=2 batch=8 lr=2e-05 max_len=512
+==> trying SentenceTransformerTrainer+MNRL ...
+[2026-08-13 16:51:28,935] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/usr/local/lib/python3.12/site-packages/deepspeed/runtime/zero/linear.py:47: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @autocast_custom_fwd
+/usr/local/lib/python3.12/site-packages/deepspeed/runtime/zero/linear.py:66: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @autocast_custom_bwd
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.9
+[93m [WARNING] [0m using untested triton version (3.5.0), only 1.0.0 is known to be compatible
+Computing widget examples:   0%|          | 0/1 [00:00<?, ?example/s]                                                                     The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': None, 'bos_token_id': None}.
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|█▋        | 1/6 [00:03<00:15,  3.16s/it] 33%|███▎      | 2/6 [00:03<00:05,  1.39s/it]                                              33%|███▎      | 2/6 [00:03<00:05,  1.39s/it] 50%|█████     | 3/6 [00:03<00:02,  1.22it/s] 67%|██████▋   | 4/6 [00:03<00:01,  1.80it/s]                                              67%|██████▋   | 4/6 [00:03<00:01,  1.80it/s] 83%|████████▎ | 5/6 [00:03<00:00,  2.45it/s]100%|██████████| 6/6 [00:03<00:00,  3.16it/s]                                             100%|██████████| 6/6 [00:03<00:00,  3.16it/s]                                             100%|██████████| 6/6 [00:03<00:00,  3.16it/s]100%|██████████| 6/6 [00:03<00:00,  1.54it/s]
+{'loss': 0.0094, 'grad_norm': 0.4816213846206665, 'learning_rate': 1.6666666666666667e-05, 'epoch': 0.67}
+{'loss': 0.0002, 'grad_norm': 0.0116476034745574, 'learning_rate': 1e-05, 'epoch': 1.33}
+{'loss': 0.0001, 'grad_norm': 0.003697754116728902, 'learning_rate': 3.3333333333333333e-06, 'epoch': 2.0}
+{'train_runtime': 3.8936, 'train_samples_per_second': 10.273, 'train_steps_per_second': 1.541, 'train_loss': 0.0032411416371663413, 'epoch': 2.0}
+==> SentenceTransformerTrainer+MNRL succeeded; saved to /workspace/code/bge-large-zh-v1.5/finetuned
+TRAIN_OK

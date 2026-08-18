@@ -1,0 +1,54 @@
+########## Qwen3-Embedding-0.6B ##########
+[train] Qwen3-Embedding-0.6B ...
+Qwen3-Embedding-0.6B train: ok (TRAIN_OK=1)
+  tail train:
+    [93m [WARNING] [0m using untested triton version (3.5.0), only 1.0.0 is known to be compatible
+    saved finetuned model to /workspace/code/Qwen3-Embedding-0.6B/finetuned
+    TRAIN_OK
+[infer] Qwen3-Embedding-0.6B ...
+Qwen3-Embedding-0.6B infer: ok (INFER_OK=1)
+  tail infer:
+              1.4769e-01,  6.4468e-02,  9.4181e-02,  2.7623e-02,  3.1192e-01]])
+    wrote /workspace/code/Qwen3-Embedding-0.6B/results.json
+    INFER_OK
+########## Qwen3-Reranker-0.6B ##########
+[train] Qwen3-Reranker-0.6B ...
+Qwen3-Reranker-0.6B train: ok (TRAIN_OK=1)
+  tail train:
+    [93m [WARNING] [0m using untested triton version (3.5.0), only 1.0.0 is known to be compatible
+    Saved fine-tuned model to /workspace/code/Qwen3-Reranker-0.6B/finetuned
+    TRAIN_OK
+[infer] Qwen3-Reranker-0.6B ...
+Qwen3-Reranker-0.6B infer: ok (INFER_OK=1)
+  tail infer:
+      [19] label=0 score=0.000000  q='如何做一道西红柿炒鸡蛋？'
+    Wrote results to /workspace/code/Qwen3-Reranker-0.6B/results.json
+    INFER_OK
+########## bge-reranker-large ##########
+[train] bge-reranker-large ...
+bge-reranker-large train: ok (TRAIN_OK=1)
+  tail train:
+    [93m [WARNING] [0m using untested triton version (3.5.0), only 1.0.0 is known to be compatible
+    saved fine-tuned model to /workspace/code/bge-reranker-large/finetuned
+    TRAIN_OK
+[infer] bge-reranker-large ...
+bge-reranker-large infer: ok (INFER_OK=1)
+  tail infer:
+    
+    wrote /workspace/code/bge-reranker-large/results.json
+    INFER_OK
+########## jina-embeddings-v3 ##########
+[train] jina-embeddings-v3 ...
+jina-embeddings-v3 train: ok (TRAIN_OK=1)
+  tail train:
+    [93m [WARNING] [0m using untested triton version (3.5.0), only 1.0.0 is known to be compatible
+    [train] saved finetuned model to /workspace/code/jina-embeddings-v3/finetuned
+    TRAIN_OK
+[infer] jina-embeddings-v3 ...
+jina-embeddings-v3 infer: FAIL (INFER_OK=0
+0)
+  tail infer:
+        with open(module_file, encoding="utf-8") as f:
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    FileNotFoundError: [Errno 2] No such file or directory: '/cache/hf/modules/transformers_modules/finetuned/block.py'
+########## ALL DONE ##########

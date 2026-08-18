@@ -1,0 +1,28 @@
+LOAD_PATH = /workspace/code/bge-reranker-large/finetuned
+DEVICE    = cuda
+
+idx  label       score   query
+------------------------------------------------------------
+  0      1      6.5177   what is panda?
+  1      0     -6.0225   what is panda?
+  2      1      7.7359   中国的首都是哪里？
+  3      0     -9.3492   中国的首都是哪里？
+  4      1      8.0337   What is the speed of light?
+  5      0     -9.5009   What is the speed of light?
+  6      1      8.5557   谁发明了活字印刷术？
+  7      0     -8.1002   谁发明了活字印刷术？
+  8      1      8.0905   How to reverse a list in Pytho
+  9      0     -9.5042   How to reverse a list in Pytho
+ 10      1      6.8054   今天天气怎么样？
+ 11      0     -9.5030   今天天气怎么样？
+ 12      1      7.8999   Where is Mount Everest located
+ 13      0     -6.1666   Where is Mount Everest located
+ 14      1      9.4873   万有引力定律是谁提出的？
+ 15      0     -9.5046   万有引力定律是谁提出的？
+ 16      1      7.7237   When did World War II end?
+ 17      0     -9.5011   When did World War II end?
+ 18      1      6.5811   如何用Python读取文件？
+ 19      0     -7.9068   如何用Python读取文件？
+
+wrote /workspace/code/bge-reranker-large/results.json
+INFER_OK

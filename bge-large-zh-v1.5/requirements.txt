@@ -1,0 +1,8 @@
+# Extra pip dependencies for bge-large-zh-v1.5 (install in the PPU container)
+sentence-transformers>=3.0
+FlagEmbedding
+transformers>=4.51
+torch
+datasets
+# Note: numpy is pulled in by the above; bge-large-zh-v1.5 does NOT require
+# pinning numpy<2 (that constraint is specific to jina-embeddings-v3).

@@ -1,0 +1,79 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/usr/local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2779: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2779: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2779: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2779: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2779: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2779: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2779: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+==================================================================
+[PPU-EVIDENCE] Qwen3-Reranker-0.6B
+[PPU-EVIDENCE] torch=2.9.0
+[PPU-EVIDENCE] torch.cuda.is_available()=True
+[PPU-EVIDENCE] device_count=1
+[PPU-EVIDENCE] device(0).name='PPU-ZW810E'  <- 须为 'PPU-ZW810E'(本机含光卡)
+[PPU-EVIDENCE] CUDA_VISIBLE_DEVICES='2'
+[PPU-EVIDENCE] PJRT_DEVICE='CUDA'
+[PPU-EVIDENCE] PASS: 设备为本机含光 PPU(非 NVIDIA、非 CPU)
+==================================================================
+device: cuda
+MODEL_PATH: /workspace/checkpoints/Qwen3-Reranker-0.6B
+token_true_id(yes)=9693 token_false_id(no)=2152
+  id 9693 -> 'yes' (expected 'yes')
+  id 2152 -> 'no' (expected 'no')
+[PPU-EVIDENCE] Qwen3-Reranker-0.6B first_param.device=cuda:0  cuda_mem_allocated=1136.4MB
+prefix_tokens=39 suffix_tokens=9
+loaded 20 training pairs
+flops_per_step (measured) = 1596532954752
+epoch 0 step 1 batch_loss 0.000321
+  epoch 0/2 | step 1/10 | loss 0.000321 | lr 2.00e-05 | 8.21 samples/s  [GPU] ppu2 | mem 3653MiB/98304MiB | util 28% | power 153.1W | temp 40C
+epoch 0 step 2 batch_loss 0.000000
+  epoch 0/2 | step 2/10 | loss 0.000000 | lr 2.00e-05 | 23.00 samples/s  [GPU] ppu2 | mem 6467MiB/98304MiB | util 20% | power 158.4W | temp 40C
+epoch 0 step 3 batch_loss 0.000005
+  epoch 0/2 | step 3/10 | loss 0.000005 | lr 2.00e-05 | 23.85 samples/s  [GPU] ppu2 | mem 6467MiB/98304MiB | util 20% | power 158.4W | temp 40C
+epoch 0 step 4 batch_loss 0.000002
+  epoch 0/2 | step 4/10 | loss 0.000002 | lr 2.00e-05 | 21.81 samples/s  [GPU] ppu2 | mem 6467MiB/98304MiB | util 20% | power 158.4W | temp 40C
+epoch 0 step 5 batch_loss 0.000000
+  epoch 0/2 | step 5/10 | loss 0.000000 | lr 2.00e-05 | 23.05 samples/s  [GPU] ppu2 | mem 7063MiB/98304MiB | util 60% | power 170.7W | temp 40C
+  [eval] epoch 0 | acc 20/20 (1.000) | mean_loss 0.000000
+epoch 1 step 6 batch_loss 0.000000
+  epoch 1/2 | step 6/10 | loss 0.000000 | lr 2.00e-05 | 23.22 samples/s  [GPU] ppu2 | mem 7071MiB/98304MiB | util 40% | power 172.9W | temp 41C
+epoch 1 step 7 batch_loss 0.000000
+  epoch 1/2 | step 7/10 | loss 0.000000 | lr 2.00e-05 | 23.15 samples/s  [GPU] ppu2 | mem 7071MiB/98304MiB | util 40% | power 172.9W | temp 41C
+epoch 1 step 8 batch_loss 0.000000
+  epoch 1/2 | step 8/10 | loss 0.000000 | lr 2.00e-05 | 23.38 samples/s  [GPU] ppu2 | mem 7071MiB/98304MiB | util 40% | power 172.9W | temp 41C
+epoch 1 step 9 batch_loss 0.000000
+  epoch 1/2 | step 9/10 | loss 0.000000 | lr 2.00e-05 | 23.66 samples/s  [GPU] ppu2 | mem 7079MiB/98304MiB | util 36% | power 180.5W | temp 41C
+epoch 1 step 10 batch_loss 0.000000
+  epoch 1/2 | step 10/10 | loss 0.000000 | lr 2.00e-05 | 23.66 samples/s  [GPU] ppu2 | mem 7079MiB/98304MiB | util 36% | power 180.5W | temp 41C
+  [eval] epoch 1 | acc 20/20 (1.000) | mean_loss 0.000000
+[2026-08-13 17:46:46,819] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/usr/local/lib/python3.12/site-packages/deepspeed/runtime/zero/linear.py:47: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @autocast_custom_fwd
+/usr/local/lib/python3.12/site-packages/deepspeed/runtime/zero/linear.py:66: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @autocast_custom_bwd
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.9
+[93m [WARNING] [0m using untested triton version (3.5.0), only 1.0.0 is known to be compatible
+Saved fine-tuned model to /workspace/code/Qwen3-Reranker-0.6B/finetuned
+[PPU-EVIDENCE] mem after_train: allocated=4716.8MB reserved=6716.0MB
+============================================================================
+TRAIN SUMMARY | Qwen3-Reranker-0.6B | device PPU-ZW810E (cuda:0, physical ppu2)
+  steps=10  epochs=2  train_time=2.734s  throughput=14.63 samples/s
+  final_acc=20/20 (1.000)
+  GPU mem: peak 7079MiB / 98304MiB   (ppu-smi, 6 samples)
+  GPU util: avg 35.7%  peak 60.0%   power avg 169.7W   temp peak 41C
+  TFLOPS (measured: FLOP_counter 1596532.95M/step × 10 steps / 2.734s): 5.839 TFLOPS
+============================================================================
+TRAIN_OK

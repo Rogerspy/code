@@ -1,0 +1,26 @@
+WARNING:sentence_transformers.util.decorators:The `tokenizer_kwargs` argument was renamed and is now deprecated. Please use `processor_kwargs` instead.
+device=cuda
+model_path=/workspace/checkpoints/Qwen3-Embedding-0.6B
+epoch 1/2 step 1 loss 0.0002
+epoch 1/2 step 2 loss 0.0000
+epoch 1/2 step 3 loss 0.0000
+epoch 1/2 step 4 loss 0.0000
+epoch 1/2 step 5 loss 0.0000
+epoch 2/2 step 6 loss 0.0000
+epoch 2/2 step 7 loss 0.0000
+epoch 2/2 step 8 loss 0.0000
+epoch 2/2 step 9 loss 0.0000
+epoch 2/2 step 10 loss 0.0000
+[2026-08-13 16:45:35,961] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/usr/local/lib/python3.12/site-packages/deepspeed/runtime/zero/linear.py:47: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @autocast_custom_fwd
+/usr/local/lib/python3.12/site-packages/deepspeed/runtime/zero/linear.py:66: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @autocast_custom_bwd
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.9
+[93m [WARNING] [0m using untested triton version (3.5.0), only 1.0.0 is known to be compatible
+saved finetuned model to /workspace/code/Qwen3-Embedding-0.6B/finetuned
+TRAIN_OK

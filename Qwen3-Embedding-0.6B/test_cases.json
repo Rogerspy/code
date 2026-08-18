@@ -1,0 +1,102 @@
+[
+  {
+    "query": "What is the capital of France?",
+    "positive": "The capital of France is Paris, a major European city known for the Eiffel Tower and the Louvre museum.",
+    "negative": "Tokyo is the capital of Japan, located on the island of Honshu."
+  },
+  {
+    "query": "中国的首都是哪座城市？",
+    "positive": "中国的首都是北京，位于华北平原北部，是中国的政治和文化中心。",
+    "negative": "上海是中国最大的经济中心之一，以金融和航运闻名。"
+  },
+  {
+    "query": "Explain gravity",
+    "positive": "Gravity is a force that attracts two bodies toward each other; it gives weight to physical objects and governs the movement of planets around the sun.",
+    "negative": "Photosynthesis is the process by which plants convert sunlight into chemical energy."
+  },
+  {
+    "query": "什么是牛顿第二定律？",
+    "positive": "牛顿第二定律指出，物体的加速度与所受合外力成正比，与物体的质量成反比，公式为 F=ma。",
+    "negative": "水在海平面处的沸点为100摄氏度，随海拔升高而降低。"
+  },
+  {
+    "query": "Who was the first emperor of Rome?",
+    "positive": "Augustus was the first emperor of Rome, ruling from 27 BCE and establishing the Principate after the fall of the Republic.",
+    "negative": "The Great Wall of China was built to defend against northern nomadic invasions."
+  },
+  {
+    "query": "唐朝是哪一年建立的？",
+    "positive": "唐朝建立于公元618年，由李渊称帝建国，定都长安。",
+    "negative": "宋代以瓷器工艺和海上贸易闻名，建立于公元960年。"
+  },
+  {
+    "query": "How do I reverse a list in Python?",
+    "positive": "In Python, you can reverse a list with the slice syntax my_list[::-1] or the in-place method list.reverse().",
+    "negative": "JavaScript arrays can be sorted in place with the Array.prototype.sort() method."
+  },
+  {
+    "query": "如何在Python中定义一个函数？",
+    "positive": "在Python中使用def关键字定义函数，例如 def add(a, b): return a + b。",
+    "negative": "Java中通过class关键字定义类，类中可包含方法和属性。"
+  },
+  {
+    "query": "How do I brew coffee with a French press?",
+    "positive": "To brew with a French press, add coarse coffee grounds, pour hot water, steep for about four minutes, then slowly press the plunger down.",
+    "negative": "Espresso is made by forcing pressurized hot water through finely ground, compacted coffee."
+  },
+  {
+    "query": "怎么做西红柿炒鸡蛋？",
+    "positive": "西红柿炒鸡蛋的做法：鸡蛋打散炒熟盛出，西红柿切块炒出汁后加入鸡蛋翻炒，最后加盐调味即可。",
+    "negative": "红烧肉需要五花肉、酱油、冰糖和料酒小火慢炖而成。"
+  },
+  {
+    "query": "What is the chemical formula of water?",
+    "positive": "The chemical formula of water is H2O, consisting of two hydrogen atoms covalently bonded to one oxygen atom.",
+    "negative": "Carbon dioxide has the chemical formula CO2, with one carbon atom bonded to two oxygen atoms."
+  },
+  {
+    "query": "人体最大的器官是什么？",
+    "positive": "人体最大的器官是皮肤，它覆盖全身表面，具有保护、感知和调节体温等功能。",
+    "negative": "人体心脏分为左右心房和左右心室共四个腔室。"
+  },
+  {
+    "query": "What is the Pythagorean theorem?",
+    "positive": "The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: a^2 + b^2 = c^2.",
+    "negative": "The quadratic formula x = (-b ± sqrt(b^2 - 4ac)) / 2a solves equations of the form ax^2 + bx + c = 0."
+  },
+  {
+    "query": "太阳系中最大的行星是哪颗？",
+    "positive": "太阳系中最大的行星是木星，其质量约为太阳系其他所有行星质量总和的两倍多。",
+    "negative": "火星因表面富含氧化铁而呈现红色，被称为红色行星。"
+  },
+  {
+    "query": "What is a transformer in deep learning?",
+    "positive": "A transformer is a neural network architecture based on self-attention, introduced in the 2017 paper Attention Is All You Need, and widely used for language tasks.",
+    "negative": "Convolutional neural networks use convolutional layers and are commonly used for image recognition."
+  },
+  {
+    "query": "什么是通货膨胀？",
+    "positive": "通货膨胀是指在一定时期内物价总水平持续上涨，导致货币购买力下降的经济现象。",
+    "negative": "国内生产总值GDP用于衡量一个国家或地区在一定时期内的经济总量。"
+  },
+  {
+    "query": "How many players are on a soccer team during a match?",
+    "positive": "A soccer team fields eleven players during a match, including one goalkeeper, with substitutions allowed.",
+    "negative": "A basketball team fields five players on court at a time per team."
+  },
+  {
+    "query": "《蒙娜丽莎》是谁的作品？",
+    "positive": "《蒙娜丽莎》是意大利文艺复兴时期画家列奥纳多·达·芬奇创作的油画，现藏于巴黎卢浮宫。",
+    "negative": "荷兰画家文森特·梵高的代表作之一是《星夜》。"
+  },
+  {
+    "query": "¿Cuál es la capital de España?",
+    "positive": "La capital de España es Madrid, situada en el centro de la península ibérica.",
+    "negative": "Barcelona es una ciudad costera famosa por la arquitectura de Gaudí."
+  },
+  {
+    "query": "What is insulin used for?",
+    "positive": "Insulin is a hormone that regulates blood glucose levels and is used medically to treat diabetes by lowering blood sugar.",
+    "negative": "Antibiotics are medications used to treat bacterial infections, not viral ones."
+  }
+]

@@ -1,0 +1,162 @@
+ppu-smi: | PPU-SMI 1.22          Driver Version: 2.0.0-2e1b14  HGGC Version: N/A         |
+physical PPU 2 idle before: 1MiB / 98304MiB
+(nvidia-smi check: no nvidia-smi -> 非 NVIDIA 机器)
+########## Qwen3-Embedding-0.6B ##########
+[train] ppu2 mem before: 1MiB / 98304MiB
+[train] exit=0 TRAIN_OK=1  ppu2 mem after: 1MiB / 98304MiB  peak_during_train=12559MiB
+    [PPU-EVIDENCE] Qwen3-Embedding-0.6B
+    [PPU-EVIDENCE] torch=2.9.0
+    [PPU-EVIDENCE] torch.cuda.is_available()=True
+    [PPU-EVIDENCE] device_count=1
+    [PPU-EVIDENCE] device(0).name='PPU-ZW810E'  <- 须为 'PPU-ZW810E'(本机含光卡)
+    [PPU-EVIDENCE] CUDA_VISIBLE_DEVICES='2'
+    [PPU-EVIDENCE] PJRT_DEVICE='CUDA'
+    [PPU-EVIDENCE] PASS: 设备为本机含光 PPU(非 NVIDIA、非 CPU)
+    [PPU-EVIDENCE] Qwen3-Embedding-0.6B first_param.device=cuda:0  cuda_mem_allocated=2272.7MB
+      epoch 1/2 | step 1/10 | loss 0.000191 | lr 2.00e-05 | 6.20 samples/s  [GPU] ppu2 | mem 12323MiB/98304MiB | util 0% | power 159.6W | temp 39C
+      epoch 1/2 | step 2/10 | loss 0.000000 | lr 2.00e-05 | 13.08 samples/s  [GPU] ppu2 | mem 12323MiB/98304MiB | util 0% | power 159.6W | temp 39C
+      epoch 1/2 | step 3/10 | loss 0.000001 | lr 2.00e-05 | 12.68 samples/s  [GPU] ppu2 | mem 12463MiB/98304MiB | util 30% | power 168.2W | temp 40C
+      epoch 1/2 | step 4/10 | loss 0.000002 | lr 2.00e-05 | 12.72 samples/s  [GPU] ppu2 | mem 12511MiB/98304MiB | util 46% | power 174.2W | temp 40C
+      epoch 1/2 | step 5/10 | loss 0.000003 | lr 2.00e-05 | 12.88 samples/s  [GPU] ppu2 | mem 12511MiB/98304MiB | util 46% | power 174.2W | temp 40C
+      [eval] epoch 1 | acc 20/20 (1.000) | mean_loss 0.000040
+      epoch 2/2 | step 6/10 | loss 0.000000 | lr 2.00e-05 | 12.58 samples/s  [GPU] ppu2 | mem 12523MiB/98304MiB | util 100% | power 186.3W | temp 41C
+      epoch 2/2 | step 7/10 | loss 0.000002 | lr 2.00e-05 | 13.30 samples/s  [GPU] ppu2 | mem 12535MiB/98304MiB | util 40% | power 185.3W | temp 40C
+      epoch 2/2 | step 8/10 | loss 0.000000 | lr 2.00e-05 | 13.37 samples/s  [GPU] ppu2 | mem 12535MiB/98304MiB | util 40% | power 185.3W | temp 40C
+      epoch 2/2 | step 9/10 | loss 0.000000 | lr 2.00e-05 | 13.04 samples/s  [GPU] ppu2 | mem 12547MiB/98304MiB | util 28% | power 188.8W | temp 40C
+      epoch 2/2 | step 10/10 | loss 0.000000 | lr 2.00e-05 | 12.76 samples/s  [GPU] ppu2 | mem 12547MiB/98304MiB | util 40% | power 187.4W | temp 40C
+      [eval] epoch 2 | acc 20/20 (1.000) | mean_loss 0.000001
+    [PPU-EVIDENCE] mem after_train: allocated=9109.1MB reserved=12156.0MB
+      steps=10  epochs=2  train_time=4.003s  throughput=9.99 samples/s
+    TRAIN_OK
+[infer] ppu2 mem before: 1MiB / 98304MiB
+[infer] exit=0 INFER_OK=1  ppu2 mem after: 1MiB / 98304MiB
+    INFER_OK
+########## bge-large-zh-v1.5 ##########
+[train] ppu2 mem before: 1MiB / 98304MiB
+[train] exit=0 TRAIN_OK=1  ppu2 mem after: 1MiB / 98304MiB  peak_during_train=6409MiB
+    /workspace/code/bge-large-zh-v1.5/train.py:88: DeprecationWarning: Importing from 'sentence_transformers.losses' is deprecated and will be removed in a future version. Please use 'sentence_transformers.sentence_transformer.losses' instead.
+      from sentence_transformers.losses import MultipleNegativesRankingLoss
+    [PPU-EVIDENCE] bge-large-zh-v1.5
+    [PPU-EVIDENCE] torch=2.9.0
+    [PPU-EVIDENCE] torch.cuda.is_available()=True
+    [PPU-EVIDENCE] device_count=1
+    [PPU-EVIDENCE] device(0).name='PPU-ZW810E'  <- 须为 'PPU-ZW810E'(本机含光卡)
+    [PPU-EVIDENCE] CUDA_VISIBLE_DEVICES='2'
+    [PPU-EVIDENCE] PJRT_DEVICE='CUDA'
+    [PPU-EVIDENCE] PASS: 设备为本机含光 PPU(非 NVIDIA、非 CPU)
+    bge-large-zh-v1.5 fine-tune | cases=20 device=cuda epochs=2 batch=8 lr=2e-05 max_len=512
+    [PPU-EVIDENCE] bge-large-zh-v1.5 first_param.device=cuda:0  cuda_mem_allocated=1241.8MB
+    {'loss': 0.0094, 'grad_norm': 0.4816213846206665, 'learning_rate': 1.6666666666666667e-05, 'epoch': 0.67}
+      epoch 1/2 | step 2/6 | loss 0.009400 | lr 1.67e-05 | 4.50 samples/s  [GPU] ppu2 | mem 5457MiB/98304MiB | util 78% | power 160.9W | temp 41C
+    {'loss': 0.0002, 'grad_norm': 0.0116476034745574, 'learning_rate': 1e-05, 'epoch': 1.33}
+      epoch 2/2 | step 4/6 | loss 0.000200 | lr 1.00e-05 | 54.85 samples/s  [GPU] ppu2 | mem 5457MiB/98304MiB | util 78% | power 160.9W | temp 41C
+    {'loss': 0.0001, 'grad_norm': 0.003697754116728902, 'learning_rate': 3.3333333333333333e-06, 'epoch': 2.0}
+      epoch 2/2 | step 6/6 | loss 0.000100 | lr 3.33e-06 | 58.50 samples/s  [GPU] ppu2 | mem 6409MiB/98304MiB | util 36% | power 179.2W | temp 41C
+    {'train_runtime': 3.8228, 'train_samples_per_second': 10.463, 'train_steps_per_second': 1.57, 'train_loss': 0.0032411416371663413, 'epoch': 2.0}
+      [eval] epoch 2 | acc 20/20 (1.000) | mean_loss 0.564098
+      steps=6  epochs=2  train_time=4.539s  throughput=8.81 samples/s
+    [PPU-EVIDENCE] mem after_train: allocated=1259.0MB reserved=6024.0MB
+    TRAIN_OK
+[infer] ppu2 mem before: 1MiB / 98304MiB
+[infer] exit=0 INFER_OK=1  ppu2 mem after: 1MiB / 98304MiB
+    Embedding shape: queries=(20, 1024) dim=1024
+    Embedding dim assertion OK (1024 == 1024)
+    INFER_OK
+########## Qwen3-Reranker-0.6B ##########
+[train] ppu2 mem before: 1MiB / 98304MiB
+[train] exit=0 TRAIN_OK=1  ppu2 mem after: 1MiB / 98304MiB  peak_during_train=7079MiB
+    [PPU-EVIDENCE] Qwen3-Reranker-0.6B
+    [PPU-EVIDENCE] torch=2.9.0
+    [PPU-EVIDENCE] torch.cuda.is_available()=True
+    [PPU-EVIDENCE] device_count=1
+    [PPU-EVIDENCE] device(0).name='PPU-ZW810E'  <- 须为 'PPU-ZW810E'(本机含光卡)
+    [PPU-EVIDENCE] CUDA_VISIBLE_DEVICES='2'
+    [PPU-EVIDENCE] PJRT_DEVICE='CUDA'
+    [PPU-EVIDENCE] PASS: 设备为本机含光 PPU(非 NVIDIA、非 CPU)
+    [PPU-EVIDENCE] Qwen3-Reranker-0.6B first_param.device=cuda:0  cuda_mem_allocated=1136.4MB
+    epoch 0 step 1 batch_loss 0.000321
+      epoch 0/2 | step 1/10 | loss 0.000321 | lr 2.00e-05 | 8.21 samples/s  [GPU] ppu2 | mem 3653MiB/98304MiB | util 28% | power 153.1W | temp 40C
+    epoch 0 step 2 batch_loss 0.000000
+      epoch 0/2 | step 2/10 | loss 0.000000 | lr 2.00e-05 | 23.00 samples/s  [GPU] ppu2 | mem 6467MiB/98304MiB | util 20% | power 158.4W | temp 40C
+    epoch 0 step 3 batch_loss 0.000005
+      epoch 0/2 | step 3/10 | loss 0.000005 | lr 2.00e-05 | 23.85 samples/s  [GPU] ppu2 | mem 6467MiB/98304MiB | util 20% | power 158.4W | temp 40C
+    epoch 0 step 4 batch_loss 0.000002
+      epoch 0/2 | step 4/10 | loss 0.000002 | lr 2.00e-05 | 21.81 samples/s  [GPU] ppu2 | mem 6467MiB/98304MiB | util 20% | power 158.4W | temp 40C
+    epoch 0 step 5 batch_loss 0.000000
+      epoch 0/2 | step 5/10 | loss 0.000000 | lr 2.00e-05 | 23.05 samples/s  [GPU] ppu2 | mem 7063MiB/98304MiB | util 60% | power 170.7W | temp 40C
+      [eval] epoch 0 | acc 20/20 (1.000) | mean_loss 0.000000
+    epoch 1 step 6 batch_loss 0.000000
+      epoch 1/2 | step 6/10 | loss 0.000000 | lr 2.00e-05 | 23.22 samples/s  [GPU] ppu2 | mem 7071MiB/98304MiB | util 40% | power 172.9W | temp 41C
+    epoch 1 step 7 batch_loss 0.000000
+      epoch 1/2 | step 7/10 | loss 0.000000 | lr 2.00e-05 | 23.15 samples/s  [GPU] ppu2 | mem 7071MiB/98304MiB | util 40% | power 172.9W | temp 41C
+    epoch 1 step 8 batch_loss 0.000000
+      epoch 1/2 | step 8/10 | loss 0.000000 | lr 2.00e-05 | 23.38 samples/s  [GPU] ppu2 | mem 7071MiB/98304MiB | util 40% | power 172.9W | temp 41C
+    epoch 1 step 9 batch_loss 0.000000
+      epoch 1/2 | step 9/10 | loss 0.000000 | lr 2.00e-05 | 23.66 samples/s  [GPU] ppu2 | mem 7079MiB/98304MiB | util 36% | power 180.5W | temp 41C
+    epoch 1 step 10 batch_loss 0.000000
+      epoch 1/2 | step 10/10 | loss 0.000000 | lr 2.00e-05 | 23.66 samples/s  [GPU] ppu2 | mem 7079MiB/98304MiB | util 36% | power 180.5W | temp 41C
+[infer] ppu2 mem before: 1MiB / 98304MiB
+[infer] exit=0 INFER_OK=1  ppu2 mem after: 1MiB / 98304MiB
+    INFER_OK
+########## bge-reranker-large ##########
+[train] ppu2 mem before: 1MiB / 98304MiB
+[train] exit=0 TRAIN_OK=1  ppu2 mem after: 1MiB / 98304MiB  peak_during_train=15853MiB
+    [PPU-EVIDENCE] bge-reranker-large
+    [PPU-EVIDENCE] torch=2.9.0
+    [PPU-EVIDENCE] torch.cuda.is_available()=True
+    [PPU-EVIDENCE] device_count=1
+    [PPU-EVIDENCE] device(0).name='PPU-ZW810E'  <- 须为 'PPU-ZW810E'(本机含光卡)
+    [PPU-EVIDENCE] CUDA_VISIBLE_DEVICES='2'
+    [PPU-EVIDENCE] PJRT_DEVICE='CUDA'
+    [PPU-EVIDENCE] PASS: 设备为本机含光 PPU(非 NVIDIA、非 CPU)
+    [PPU-EVIDENCE] bge-reranker-large first_param.device=cuda:0  cuda_mem_allocated=2135.8MB
+      epoch 1/2 | step 1/6 | loss 0.047368 | lr 2.00e-05 | 16.12 samples/s  [GPU] ppu2 | mem 9953MiB/98304MiB | util 100% | power 172.3W | temp 41C
+      epoch 1/2 | step 2/6 | loss 0.273960 | lr 2.00e-05 | 17.84 samples/s  [GPU] ppu2 | mem 13897MiB/98304MiB | util 100% | power 193.5W | temp 43C
+      epoch 1/2 | step 3/6 | loss 0.008422 | lr 2.00e-05 | 15.41 samples/s  [GPU] ppu2 | mem 15853MiB/98304MiB | util 100% | power 206.1W | temp 42C
+    epoch 1/2  avg_loss=0.109917  steps=3
+      [eval] epoch 1 | acc 20/20 (1.000) | mean_loss 0.004073
+      epoch 2/2 | step 4/6 | loss 0.004975 | lr 2.00e-05 | 17.88 samples/s  [GPU] ppu2 | mem 15853MiB/98304MiB | util 60% | power 213.7W | temp 42C
+      epoch 2/2 | step 5/6 | loss 0.002464 | lr 2.00e-05 | 17.83 samples/s  [GPU] ppu2 | mem 15853MiB/98304MiB | util 100% | power 222.1W | temp 43C
+      epoch 2/2 | step 6/6 | loss 0.004908 | lr 2.00e-05 | 15.41 samples/s  [GPU] ppu2 | mem 15853MiB/98304MiB | util 100% | power 223.2W | temp 42C
+    epoch 2/2  avg_loss=0.004116  steps=6
+      [eval] epoch 2 | acc 20/20 (1.000) | mean_loss 0.001315
+    [PPU-EVIDENCE] mem after_train: allocated=6424.8MB reserved=15518.0MB
+      steps=6  epochs=2  train_time=3.187s  throughput=12.55 samples/s
+    TRAIN_OK
+[infer] ppu2 mem before: 1MiB / 98304MiB
+[infer] exit=0 INFER_OK=1  ppu2 mem after: 1MiB / 98304MiB
+    INFER_OK
+########## jina-embeddings-v3 ##########
+[train] ppu2 mem before: 1MiB / 98304MiB
+[train] exit=0 TRAIN_OK=1  ppu2 mem after: 1MiB / 98304MiB  peak_during_train=7825MiB
+    [PPU-EVIDENCE] jina-embeddings-v3
+    [PPU-EVIDENCE] torch=2.9.0
+    [PPU-EVIDENCE] torch.cuda.is_available()=True
+    [PPU-EVIDENCE] device_count=1
+    [PPU-EVIDENCE] device(0).name='PPU-ZW810E'  <- 须为 'PPU-ZW810E'(本机含光卡)
+    [PPU-EVIDENCE] CUDA_VISIBLE_DEVICES='2'
+    [PPU-EVIDENCE] PJRT_DEVICE='CUDA'
+    [PPU-EVIDENCE] PASS: 设备为本机含光 PPU(非 NVIDIA、非 CPU)
+    [PPU-EVIDENCE] jina-embeddings-v3 first_param.device=cuda:0  cuda_mem_allocated=2185.7MB
+      epoch 1/2 | step 1/10 | loss 0.000004 | lr 2.00e-05 | 6.31 samples/s  [GPU] ppu2 | mem 7705MiB/98304MiB | util 0% | power 159.1W | temp 40C
+      epoch 1/2 | step 2/10 | loss 0.000022 | lr 2.00e-05 | 12.03 samples/s  [GPU] ppu2 | mem 7705MiB/98304MiB | util 0% | power 159.1W | temp 40C
+      epoch 1/2 | step 3/10 | loss 0.004098 | lr 2.00e-05 | 11.97 samples/s  [GPU] ppu2 | mem 7769MiB/98304MiB | util 12% | power 163.5W | temp 40C
+      epoch 1/2 | step 4/10 | loss 0.000010 | lr 2.00e-05 | 12.14 samples/s  [GPU] ppu2 | mem 7769MiB/98304MiB | util 12% | power 163.5W | temp 40C
+      epoch 1/2 | step 5/10 | loss 0.000025 | lr 2.00e-05 | 11.94 samples/s  [GPU] ppu2 | mem 7785MiB/98304MiB | util 30% | power 167.0W | temp 40C
+      [eval] epoch 1 | acc 20/20 (1.000) | mean_loss 0.000832
+    [train] epoch 1/2  mean_loss=0.0008
+      epoch 2/2 | step 6/10 | loss 0.000065 | lr 2.00e-05 | 12.26 samples/s  [GPU] ppu2 | mem 7785MiB/98304MiB | util 2% | power 172.4W | temp 41C
+      epoch 2/2 | step 7/10 | loss 0.000022 | lr 2.00e-05 | 12.10 samples/s  [GPU] ppu2 | mem 7785MiB/98304MiB | util 20% | power 174.0W | temp 40C
+      epoch 2/2 | step 8/10 | loss 0.000289 | lr 2.00e-05 | 12.19 samples/s  [GPU] ppu2 | mem 7785MiB/98304MiB | util 20% | power 174.0W | temp 40C
+      epoch 2/2 | step 9/10 | loss 0.000004 | lr 2.00e-05 | 12.14 samples/s  [GPU] ppu2 | mem 7825MiB/98304MiB | util 28% | power 173.9W | temp 40C
+      epoch 2/2 | step 10/10 | loss 0.000652 | lr 2.00e-05 | 12.18 samples/s  [GPU] ppu2 | mem 7825MiB/98304MiB | util 28% | power 174.0W | temp 40C
+      [eval] epoch 2 | acc 20/20 (1.000) | mean_loss 0.000206
+    [train] epoch 2/2  mean_loss=0.0002
+      steps=10  epochs=2  train_time=4.284s  throughput=9.34 samples/s
+    [PPU-EVIDENCE] mem after_train: allocated=2351.0MB reserved=7430.0MB
+    TRAIN_OK
+[infer] ppu2 mem before: 1MiB / 98304MiB
+[infer] exit=0 INFER_OK=1  ppu2 mem after: 1MiB / 98304MiB
+    [infer] embedding dim = 1024
+    INFER_OK
+########## ALL DONE ##########

@@ -1,0 +1,102 @@
+[
+  {
+    "query": "What is the capital of China?",
+    "document": "The capital of China is Beijing, a major city in the northern part of the country and the seat of the central government.",
+    "label": 1
+  },
+  {
+    "query": "Explain gravity in simple terms.",
+    "document": "Gravity is a force that attracts two bodies toward each other. It gives weight to physical objects and is responsible for the movement of planets around the sun.",
+    "label": 1
+  },
+  {
+    "query": "唐朝是哪一年建立的？",
+    "document": "唐朝于公元618年由李渊建立，定都长安，是中国历史上最辉煌的朝代之一。",
+    "label": 1
+  },
+  {
+    "query": "How do I reverse a list in Python?",
+    "document": "You can reverse a Python list with the slice list[::-1] for a reversed copy, or call list.reverse() to reverse it in place.",
+    "label": 1
+  },
+  {
+    "query": "How long should I boil an egg to make it hard boiled?",
+    "document": "For a hard-boiled egg, boil a large egg for about 9 to 12 minutes, then cool it in ice water to make peeling easier.",
+    "label": 1
+  },
+  {
+    "query": "中国最长的河流是哪一条？",
+    "document": "长江是中国最长的河流，全长约6300公里，发源于青藏高原并最终注入东海。",
+    "label": 1
+  },
+  {
+    "query": "What is the speed of light in a vacuum?",
+    "document": "The speed of light in a vacuum is approximately 299,792 kilometers per second, often rounded to 300,000 km/s.",
+    "label": 1
+  },
+  {
+    "query": "如何在Python中读取一个文件的内容？",
+    "document": "可以使用内置的 open() 函数配合 with 语句打开文件，再调用 read() 或按行迭代来读取文件内容。",
+    "label": 1
+  },
+  {
+    "query": "When did World War II end?",
+    "document": "World War II ended in 1945, with Germany surrendering in May and Japan formally surrendering in September of that year.",
+    "label": 1
+  },
+  {
+    "query": "感冒时应该注意些什么？",
+    "document": "感冒时应多喝温水、注意休息、保持室内通风，并可适当补充维生素C以帮助恢复。",
+    "label": 1
+  },
+  {
+    "query": "What is the capital of France?",
+    "document": "Mount Everest is the highest mountain on Earth, located in the Himalayan range on the border of Nepal and China.",
+    "label": 0
+  },
+  {
+    "query": "What causes the seasons on Earth?",
+    "document": "The Great Wall of China is a series of ancient fortifications stretching across northern China, built to protect against invasions.",
+    "label": 0
+  },
+  {
+    "query": "宋朝的建立者是谁？",
+    "document": "光合作用是植物利用阳光、水和二氧化碳合成有机物并释放氧气的过程。",
+    "label": 0
+  },
+  {
+    "query": "How do you define a function in Python?",
+    "document": "The Eiffel Tower was constructed in 1889 for the World's Fair in Paris and stands 330 meters tall.",
+    "label": 0
+  },
+  {
+    "query": "What temperature should I use to bake a pizza?",
+    "document": "The Pacific Ocean is the largest and deepest ocean on Earth, covering more than 30% of the planet's surface.",
+    "label": 0
+  },
+  {
+    "query": "黄河流经中国哪些省份？",
+    "document": "Python 是一种解释型、高级、通用的编程语言，由 Guido van Rossum 于1991年首次发布。",
+    "label": 0
+  },
+  {
+    "query": "What is Newton's second law of motion?",
+    "document": "The official currency of Japan is the Japanese yen, which is symbolized by the character yen and the code JPY.",
+    "label": 0
+  },
+  {
+    "query": "如何在 Python 中安装第三方包？",
+    "document": "长城是中国古代的军事防御工程，东起山海关，西至嘉峪关，绵延万里。",
+    "label": 0
+  },
+  {
+    "query": "Who was the first emperor of Rome?",
+    "document": "Photosynthesis is the process by which green plants use sunlight to convert carbon dioxide and water into glucose and oxygen.",
+    "label": 0
+  },
+  {
+    "query": "如何做一道西红柿炒鸡蛋？",
+    "document": "北京是中华人民共和国的首都，位于华北平原北部，是全国的政治和文化中心。",
+    "label": 0
+  }
+]

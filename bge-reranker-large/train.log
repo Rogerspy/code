@@ -1,0 +1,48 @@
+==================================================================
+[PPU-EVIDENCE] bge-reranker-large
+[PPU-EVIDENCE] torch=2.9.0
+[PPU-EVIDENCE] torch.cuda.is_available()=True
+[PPU-EVIDENCE] device_count=1
+[PPU-EVIDENCE] device(0).name='PPU-ZW810E'  <- 须为 'PPU-ZW810E'(本机含光卡)
+[PPU-EVIDENCE] CUDA_VISIBLE_DEVICES='2'
+[PPU-EVIDENCE] PJRT_DEVICE='CUDA'
+[PPU-EVIDENCE] PASS: 设备为本机含光 PPU(非 NVIDIA、非 CPU)
+==================================================================
+MODEL_PATH = /workspace/checkpoints/bge-reranker-large
+DEVICE     = cuda
+finetuned -> /workspace/code/bge-reranker-large/finetuned
+[PPU-EVIDENCE] bge-reranker-large first_param.device=cuda:0  cuda_mem_allocated=2135.8MB
+loaded 20 cases
+[flops] measured flops_per_step = 8143308374016
+  epoch 1/2 | step 1/6 | loss 0.047368 | lr 2.00e-05 | 16.12 samples/s  [GPU] ppu2 | mem 9953MiB/98304MiB | util 100% | power 172.3W | temp 41C
+  epoch 1/2 | step 2/6 | loss 0.273960 | lr 2.00e-05 | 17.84 samples/s  [GPU] ppu2 | mem 13897MiB/98304MiB | util 100% | power 193.5W | temp 43C
+  epoch 1/2 | step 3/6 | loss 0.008422 | lr 2.00e-05 | 15.41 samples/s  [GPU] ppu2 | mem 15853MiB/98304MiB | util 100% | power 206.1W | temp 42C
+epoch 1/2  avg_loss=0.109917  steps=3
+  [eval] epoch 1 | acc 20/20 (1.000) | mean_loss 0.004073
+  epoch 2/2 | step 4/6 | loss 0.004975 | lr 2.00e-05 | 17.88 samples/s  [GPU] ppu2 | mem 15853MiB/98304MiB | util 60% | power 213.7W | temp 42C
+  epoch 2/2 | step 5/6 | loss 0.002464 | lr 2.00e-05 | 17.83 samples/s  [GPU] ppu2 | mem 15853MiB/98304MiB | util 100% | power 222.1W | temp 43C
+  epoch 2/2 | step 6/6 | loss 0.004908 | lr 2.00e-05 | 15.41 samples/s  [GPU] ppu2 | mem 15853MiB/98304MiB | util 100% | power 223.2W | temp 42C
+epoch 2/2  avg_loss=0.004116  steps=6
+  [eval] epoch 2 | acc 20/20 (1.000) | mean_loss 0.001315
+[2026-08-13 17:47:23,186] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/usr/local/lib/python3.12/site-packages/deepspeed/runtime/zero/linear.py:47: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @autocast_custom_fwd
+/usr/local/lib/python3.12/site-packages/deepspeed/runtime/zero/linear.py:66: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @autocast_custom_bwd
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.9
+[93m [WARNING] [0m using untested triton version (3.5.0), only 1.0.0 is known to be compatible
+saved fine-tuned model to /workspace/code/bge-reranker-large/finetuned
+[PPU-EVIDENCE] mem after_train: allocated=6424.8MB reserved=15518.0MB
+============================================================================
+TRAIN SUMMARY | bge-reranker-large | device PPU-ZW810E (cuda:0, physical ppu2)
+  steps=6  epochs=2  train_time=3.187s  throughput=12.55 samples/s
+  final_acc=20/20 (1.000)
+  GPU mem: peak 15853MiB / 98304MiB   (ppu-smi, 6 samples)
+  GPU util: avg 93.3%  peak 100.0%   power avg 205.1W   temp peak 43C
+  TFLOPS (measured: FLOP_counter 8143308.37M/step × 6 steps / 3.187s): 15.332 TFLOPS
+============================================================================
+TRAIN_OK

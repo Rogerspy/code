@@ -1,0 +1,102 @@
+[
+  {
+    "query": "what is panda?",
+    "document": "The giant panda (Ailuropoda melanoleuca), sometimes called a panda bear or simply panda, is a bear species endemic to China.",
+    "label": 1
+  },
+  {
+    "query": "what is panda?",
+    "document": "hi",
+    "label": 0
+  },
+  {
+    "query": "中国的首都是哪里？",
+    "document": "中国的首都是北京，位于华北平原北部，是全国的政治、文化中心。",
+    "label": 1
+  },
+  {
+    "query": "中国的首都是哪里？",
+    "document": "巴黎是法国的首都，以埃菲尔铁塔和卢浮宫闻名于世。",
+    "label": 0
+  },
+  {
+    "query": "What is the speed of light?",
+    "document": "The speed of light in a vacuum is approximately 299,792,458 meters per second, a fundamental constant of nature.",
+    "label": 1
+  },
+  {
+    "query": "What is the speed of light?",
+    "document": "Water boils at 100 degrees Celsius at standard atmospheric pressure near sea level.",
+    "label": 0
+  },
+  {
+    "query": "谁发明了活字印刷术？",
+    "document": "北宋的毕昇发明了活字印刷术，比德国古腾堡的金属活字早了约四百年。",
+    "label": 1
+  },
+  {
+    "query": "谁发明了活字印刷术？",
+    "document": "爱迪生发明了实用的白炽灯泡，极大改变了人类的夜间照明方式。",
+    "label": 0
+  },
+  {
+    "query": "How to reverse a list in Python?",
+    "document": "You can reverse a list in Python with the in-place method list.reverse(), or create a reversed copy using the slicing syntax my_list[::-1].",
+    "label": 1
+  },
+  {
+    "query": "How to reverse a list in Python?",
+    "document": "JavaScript is a high-level programming language commonly used to add interactivity to web pages in browsers.",
+    "label": 0
+  },
+  {
+    "query": "今天天气怎么样？",
+    "document": "今天北京晴转多云，最高气温28摄氏度，微风，适合外出活动。",
+    "label": 1
+  },
+  {
+    "query": "今天天气怎么样？",
+    "document": "西红柿炒鸡蛋是一道经典家常菜，做法简单，营养丰富。",
+    "label": 0
+  },
+  {
+    "query": "Where is Mount Everest located?",
+    "document": "Mount Everest is located on the border between Nepal and the Tibet Autonomous Region of China, in the Himalayas.",
+    "label": 1
+  },
+  {
+    "query": "Where is Mount Everest located?",
+    "document": "The Great Barrier Reef is the world's largest coral reef system, located off the coast of Queensland, Australia.",
+    "label": 0
+  },
+  {
+    "query": "万有引力定律是谁提出的？",
+    "document": "万有引力定律由英国物理学家艾萨克·牛顿在1687年出版的《自然哲学的数学原理》中提出。",
+    "label": 1
+  },
+  {
+    "query": "万有引力定律是谁提出的？",
+    "document": "光合作用是植物利用光能将二氧化碳和水转化为有机物并释放氧气的过程。",
+    "label": 0
+  },
+  {
+    "query": "When did World War II end?",
+    "document": "World War II ended in 1945, with Japan formally signing the surrender documents in September of that year.",
+    "label": 1
+  },
+  {
+    "query": "When did World War II end?",
+    "document": "The Western Roman Empire fell in 476 AD with the deposition of the last emperor, Romulus Augustulus.",
+    "label": 0
+  },
+  {
+    "query": "如何用Python读取文件？",
+    "document": "可以用内置函数 open() 打开文件，再用 read()、readlines() 或逐行 for 循环读取内容。",
+    "label": 1
+  },
+  {
+    "query": "如何用Python读取文件？",
+    "document": "数据库索引可以显著加快查询速度，常用的底层结构是 B+ 树。",
+    "label": 0
+  }
+]

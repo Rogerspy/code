@@ -1,0 +1,33 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/usr/local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:2779: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+device: cuda
+Loading model from: /workspace/code/Qwen3-Reranker-0.6B/finetuned
+token_true_id(yes)=9693 token_false_id(no)=2152
+  id 9693 -> 'yes' (expected 'yes')
+  id 2152 -> 'no' (expected 'no')
+loaded 20 pairs to score
+scores:
+  [ 0] label=1 score=1.000000  q='What is the capital of China?'
+  [ 1] label=1 score=1.000000  q='Explain gravity in simple terms.'
+  [ 2] label=1 score=1.000000  q='唐朝是哪一年建立的？'
+  [ 3] label=1 score=1.000000  q='How do I reverse a list in Python?'
+  [ 4] label=1 score=1.000000  q='How long should I boil an egg to make it'
+  [ 5] label=1 score=1.000000  q='中国最长的河流是哪一条？'
+  [ 6] label=1 score=1.000000  q='What is the speed of light in a vacuum?'
+  [ 7] label=1 score=1.000000  q='如何在Python中读取一个文件的内容？'
+  [ 8] label=1 score=1.000000  q='When did World War II end?'
+  [ 9] label=1 score=1.000000  q='感冒时应该注意些什么？'
+  [10] label=0 score=0.000000  q='What is the capital of France?'
+  [11] label=0 score=0.000000  q='What causes the seasons on Earth?'
+  [12] label=0 score=0.000000  q='宋朝的建立者是谁？'
+  [13] label=0 score=0.000000  q='How do you define a function in Python?'
+  [14] label=0 score=0.000000  q='What temperature should I use to bake a '
+  [15] label=0 score=0.000000  q='黄河流经中国哪些省份？'
+  [16] label=0 score=0.000000  q="What is Newton's second law of motion?"
+  [17] label=0 score=0.000000  q='如何在 Python 中安装第三方包？'
+  [18] label=0 score=0.000000  q='Who was the first emperor of Rome?'
+  [19] label=0 score=0.000000  q='如何做一道西红柿炒鸡蛋？'
+Wrote results to /workspace/code/Qwen3-Reranker-0.6B/results.json
+INFER_OK

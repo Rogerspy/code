@@ -1,0 +1,12 @@
+# Extra pip deps for bge-reranker-large (train.py / infer.py)
+# torch is provided by the Aliyun inference-xpu-pytorch container image
+# (torch 2.x + cu); listed here only for host-side completeness.
+torch>=2.0
+transformers>=4.51
+# High-level reranker stack (README-aligned alternative; the manual torch loop
+# in train.py does not strictly require these, but they are the documented API).
+sentence-transformers>=3.0
+FlagEmbedding
+# numpy<2 keeps broad compatibility with sentence-transformers / FlagEmbedding
+# tokenization paths; pin it to avoid ABI surprises.
+numpy<2

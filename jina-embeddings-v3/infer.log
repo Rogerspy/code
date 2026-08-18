@@ -1,0 +1,36 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+/usr/local/lib/python3.12/site-packages/flash_attn/ops/triton/layer_norm.py:984: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/site-packages/flash_attn/ops/triton/layer_norm.py:1043: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+`torch_dtype` is deprecated! Use `dtype` instead!
+[infer] using finetuned model: /workspace/code/jina-embeddings-v3/finetuned
+[infer] loaded 20 cases
+[infer] model loaded from /workspace/code/jina-embeddings-v3/finetuned
+[infer] task ids: retrieval.query=0  retrieval.passage=1
+[infer] embedding dim = 1024
+[infer] per-case cosine similarities (query-positive vs query-negative):
+  case  0 [en/geography] qp=0.7630  qn=0.1014
+  case  1 [zh/geography] qp=0.7772  qn=0.0966
+  case  2 [es/physics  ] qp=0.7536  qn=0.0852
+  case  3 [fr/history  ] qp=0.5333  qn=0.0005
+  case  4 [de/code     ] qp=0.8289  qn=0.0766
+  case  5 [en/daily-life] qp=0.6379  qn=-0.0551
+  case  6 [zh/history  ] qp=0.7007  qn=-0.0836
+  case  7 [ja/physics  ] qp=0.7243  qn=0.0446
+  case  8 [en/code     ] qp=0.8321  qn=-0.0616
+  case  9 [ru/geography] qp=0.8815  qn=0.0131
+  case 10 [en/astronomy] qp=0.7315  qn=0.1170
+  case 11 [zh/biology  ] qp=0.7895  qn=-0.0531
+  case 12 [es/daily-life] qp=0.8190  qn=0.0812
+  case 13 [en/math     ] qp=0.7754  qn=0.0619
+  case 14 [fr/history  ] qp=0.8790  qn=-0.0391
+  case 15 [zh/code     ] qp=0.8090  qn=-0.0303
+  case 16 [en/chemistry] qp=0.8219  qn=0.0882
+  case 17 [de/daily-life] qp=0.8284  qn=0.0708
+  case 18 [es/history  ] qp=0.7164  qn=0.0229
+  case 19 [en/physics  ] qp=0.6886  qn=0.0084
+[infer] mean query-positive sim = 0.7646
+[infer] mean query-negative sim = 0.0273
+[infer] wrote /workspace/code/jina-embeddings-v3/results.json
+INFER_OK
